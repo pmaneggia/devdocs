@@ -378,8 +378,8 @@ A polyfill has not been provided for this new interface, but we recognise that d
 
 namespace assignsubmission_example\privacy;
 
-if (interface_exists('\core_privacy\local\request\userlist')) {
-    interface my_userlist extends \core_privacy\local\request\userlist{}
+if (interface_exists('\core_privacy\local\request\core_userlist_provider')) {
+    interface my_userlist extends \core_privacy\local\request\core_userlist_provider{}
 } else {
     interface my_userlist {};
 }
